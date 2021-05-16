@@ -1,0 +1,21 @@
+.menuNav {
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    display: block;
+    padding: 7px 15px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color:$color-white-1;
+    @extend %font-title;
+
+    &:hover {
+      background-color: $color-light;
+    }
+  }
+}

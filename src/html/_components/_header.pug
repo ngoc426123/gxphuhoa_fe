@@ -1,20 +1,46 @@
-header.header(data-header)
-  .container
-    .header__main
-      .header__logo
-        a(href="index.html")
-          img(src="images/logo.png", alt="logo")
-      .header__tools
-        .header__menu
-          ul
-            li.home
-              a(href="index.html")
-                span Home
-            li
-              a(href="index.html") About
-            li
-              a(href="index.html") News
-            li
-              a(href="index.html") Recruit
-            li
-              a(href="index.html") Contact
+#gx-header
+  #headBanner
+    +link(href="index.html")
+      +img("images/banner.jpg", "Logo")
+  
+  #headMenu
+    +list([
+      {
+        title: 'Thông tin',
+        href: "#",
+        sub: [
+          { title: 'Tài liệu tham khảo', href: "#", },
+          { title: 'Tin Giáo Hội Hoàn Vũ', href: "#", },
+          { title: 'Tin Giáo Hội Việt Nam', href: "#", },
+          { title: 'Tin Giáo Xứ', href: "#", }
+        ]
+      },
+      {
+        title: 'Hội đồng mục vụ',
+        href: "#",
+        sub: [
+          { title: 'Khu Giáo I Thánh Phêrô', href: "#", },
+          { title: 'Khu Giáo II Thánh Giuse', href: "#", },
+          { title: 'Khu Giáo III Thánh Martinô', href: "#", },
+        ]
+      },
+      {
+        title: 'Các hội đoàn',
+        href: "#",
+        sub: [
+          { title: 'Ban Caritas Phú Hòa', href: "#", },
+          { title: 'Ban Kẻ Liệt', href: "#", },
+          { title: 'Ban Lễ Sinh', href: "#", },
+        ]
+      },
+    ])
+
+  #headMobile
+    .logo
+      +link(href="index.html")
+        +img("images/logo.png", "Logo")
+    .hotlineMobile
+      +link("tel:0373996947", "Phone Number.")
+    .menuMobile
+      .iconMenu
+        .styleMenu

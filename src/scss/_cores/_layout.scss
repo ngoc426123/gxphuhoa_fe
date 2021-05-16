@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  @extend %font-main;
   font-weight: normal;
   color: $color-black-2;
   font-size: $font-size-default;

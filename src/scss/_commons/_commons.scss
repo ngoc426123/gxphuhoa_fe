@@ -14,8 +14,6 @@ p {
 }
 
 a{
-  color: $color-black-1;
-
   &:hover,
   &:focus,
   &:active {
@@ -34,4 +32,22 @@ li {
 
 img {
   max-width: 100%;
+}
+
+#gx-container {
+  max-width: $max-width;
+  margin: 0 auto;
+  background: $color-gray-1;
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: $max-wrapper;
+  padding: 10px;
+  margin: 0 auto;
+  background: $color-white-1;
+
+  @include mq(991) {
+    padding: 0;
+  }
 }
