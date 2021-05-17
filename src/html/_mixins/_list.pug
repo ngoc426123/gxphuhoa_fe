@@ -4,8 +4,12 @@ mixin list (items)
       li
         if item.href
           +link(item.title, item.href)(class=[item.cls && item.cls])
+            if item.icon 
+              i(class=[item.icon])
             span!=item.title
         else
+          if item.icon 
+            i(class=[item.icon])
           span(class=[item.cls && item.cls])!=item.title
         if item.sub 
           +list(item.sub)

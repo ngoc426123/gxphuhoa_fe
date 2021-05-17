@@ -1,6 +1,4 @@
 .menuMobile{
-  min-height: 1px;
-
   .iconMenu {
     width: 40px;
     height: 40px;
@@ -49,6 +47,7 @@
 
       .mmContent {
         transform: translate(0%, 0%);
+        pointer-events: auto;
       }
 
       .divmmbg {
@@ -120,5 +119,83 @@
 
   .mmMenu {
     overflow-y: auto;
+
+    li {
+      overflow: hidden;
+      position: relative;
+
+      &:hover {
+        > a {
+          color: $color-white-1;
+          background-color: $color-main;
+        }
+
+        > .sub {
+          color: $color-white-1;
+        }
+      }
+
+      &.active {
+        .sub {
+          &::before {
+            content: "\f107";
+          }
+        }
+      }
+    }
+
+    a {
+      display: block;
+      font-weight: 600;
+      padding: 14px 15px;
+      font-size: 14px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: $color-black-2;
+      border-bottom: solid 1px rgba(0,0,0,0.2);
+    }
+    
+    ul ul {
+      display: none;
+      background-color: $color-gray-3;
+      
+      li {
+        &:last-child {
+          a {
+            border-bottom: none;
+          }
+        }
+
+        &:hover {
+          a {
+            color: $color-main;
+            background-color: $color-gray-3;
+          }
+        }
+      }
+
+      a {
+        padding-left: 30px;
+        text-transform: none;
+        font-weight: normal;
+        border-bottom-color: $color-gray-1;
+      }
+    }
+
+    .sub {
+      width: 50px;
+      height: 50px;
+      border-left: solid 1px rgba(0,0,0,0.2);
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+
+      &::before {
+        content: "\f105";
+        @extend %font-icon;
+        @extend %pcc;
+      }
+    }
   }
 }

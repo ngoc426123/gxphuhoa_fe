@@ -1,0 +1,23 @@
+#gx-footer {
+  .wrapper{
+    padding-top: 0;
+    padding-bottom: 0;
+    background: transparent;
+  }
+}
+
+#footerMain {
+	padding: 25px 0 40px;
+	color: $color-white-1;
+	background: $color-dark;
+
+  @include mq(991) {
+    padding: 20px 10px 10px;
+  }
+}
+
+#footerBot {
+	background: $color-black-3;
+	padding: 10px 0;
+	color: $color-white-1;
+}

@@ -1,0 +1,17 @@
+.hotlineFoot {
+  .title{
+    font-size: 13px;
+    line-height: 21px;
+    color:$color-white-1;
+  }
+
+  .hotline{
+    margin-bottom: 10px;
+
+    a{
+      display: block;
+      font-weight: bold;
+      color:$color-white-1;
+    }
+  }
+}

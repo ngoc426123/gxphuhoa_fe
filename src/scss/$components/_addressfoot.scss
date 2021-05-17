@@ -1,0 +1,20 @@
+.addressFoot {
+  .be {
+    padding-left: 20px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    line-height: 21px;
+    position: relative;
+
+    &::before{
+      @extend %font-icon;
+      position: absolute;
+      left:0;
+      top: 0;
+    }
+
+    a {
+      color:inherit;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.botLink {
+  li {
+    margin-bottom: 2px;
+  }
+
+  a {
+    color:$color-white-1;
+    position: relative;
+    font-size: 12px;
+    line-height: 20px;
+    transition: all 0.3s linear;
+
+    &:hover {
+      padding-left: 10px;
+
+      &::before {
+        opacity: 1;
+        visibility: initial;
+      }
+    }
+
+    &::before {
+      content: "\f0da";
+      @extend %font-icon;
+      position: absolute;
+      @extend %pll;
+      transition: all 0.3s linear;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

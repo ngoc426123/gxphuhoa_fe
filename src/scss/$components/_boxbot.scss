@@ -1,0 +1,24 @@
+.boxBot {
+	margin-bottom: 15px;
+
+  > .title {
+    @extend %font-title;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: bold;
+    color: $color-white-1;
+    text-transform: uppercase;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 25px;
+      border-bottom: solid 1px $color-white-1;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

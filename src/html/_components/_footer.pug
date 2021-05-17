@@ -1,2 +1,93 @@
 #gx-footer
-  
+  #footerMain
+    .wrapper
+      .row
+        .col-12.col-lg-4
+          .boxBot
+            .title Ban truyền thông giáo xứ Phú Hòa
+            .content
+              .addressFoot
+                .be.fa-home 19/2 Hoàng Xuân Nhị, P. Phú Trung, Q. Tân Phú, Tp. HCM
+                .be.fa-envelope
+                  a(href="mailto: mvttgxphuhoa@gmail.com") mvttgxphuhoa@gmail.com 
+                .be.fa-globe
+                  a(href="http://gxphuhoa.org") http://gxphuhoa.org
+        .col-12.col-lg-8.d-none.d-lg-block
+          .row
+            .col
+              .boxBot
+                .title Ban truyền thông giáo xứ Phú Hòa
+                .content
+                  .botLink
+                    +list([
+                      {
+                        title: 'Trang chủ',
+                        href: '#'
+                      },
+                      {
+                        title: 'Giới thiệu',
+                        href: '#'
+                      },
+                      {
+                        title: 'Thư viện ảnh',
+                        href: '#'
+                      },
+                      {
+                        title: 'Lưu trữ',
+                        href: '#'
+                      },
+                      {
+                        title: 'Liên hệ',
+                        href: '#'
+                      },
+                    ])
+            .col
+              .boxBot
+                .title Mạng xã hội
+                .content
+                  .socialFoot
+                    +list([
+                      {
+                        title: 'facebook',
+                        href: '#',
+                        icon: 'fab fa-facebook'
+                      },
+                      {
+                        title: 'Twitter',
+                        href: '#',
+                        icon: 'fab fa-twitter'
+                      },
+                      {
+                        title: 'Google',
+                        href: '#',
+                        icon: 'fab fa-google'
+                      },
+                      {
+                        title: 'Youtube',
+                        href: '#',
+                        icon: 'fab fa-youtube'
+                      },
+                    ])
+            .col
+              .boxBot
+                .title Hỗ trợ độc giả
+                .content
+                  .hotlineFoot
+                    .title Hỗ trợ nội dung
+                    .hotline
+                      +link("hotline", "tel:0903378512")
+                        span 090.337.8512
+                    .title Hỗ trợ hình ảnh
+                    .hotline
+                      +link("hotline", "tel:0903378512")
+                        span 090.337.8512
+                    .title Hỗ trợ kỹ thuật
+                    .hotline
+                      +link("hotline", "tel:0373996947")
+                        span 0373.996.947
+  #footerBot
+    .wrapper
+      .copyright
+        .be Power by <a href="http://wordpress.org">Wordpress</a>
+        .be Design by <a href="mailto:minhngoc.ith@gmail.com">minhngoc.ith</a>
+
