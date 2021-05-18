@@ -1,5 +1,97 @@
 extends _layout/_layout
 
 block main-content
-  div Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem ratione modi dicta sapiente quis quo qui maxime eius. Beatae rerum repellendus illo quod sit labore accusamus ipsam corporis! Dolores.
-    
+  .topHome
+    .grid
+      .col
+        +newsInner({
+          img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/thu-bay-tuan-6-PS_B-570x336.jpg',
+          cat: 'SUY NIỆM',
+          title: 'Thứ Bảy Tuần VI Phục Sinh : Ân Sủng Và Sự Thật',
+          link: '#'
+        })
+      .col
+        +newsInner({
+          img: 'http://localhost/gxphuhoa/wp-content/uploads/2020/08/cau-nguyen-voi-phuc-am-2-469x352.jpg',
+          cat: 'SUY NIỆM',
+          title: 'CẦU NGUYỆN VỚI PHÚC ÂM – THỨ BẢY TUẦN 6 PHỤC SINH B',
+          link: '#'
+        })
+      .col
+        +newsInner({
+          img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/thu-sau-tuan-6-PS-B-570x323.jpg',
+          cat: 'SUY NIỆM',
+          title: 'Thứ Sáu Tuần VI Phục Sinh : MÁTTHIA ƠN GỌI ĐẶC BIỆT',
+          link: '#',
+          isV2: true
+        })
+        +newsInner({
+          img: 'http://localhost/gxphuhoa/wp-content/uploads/2020/08/CAU-NGUYEN-VOI-PHUC-AM-1-2-528x352.jpg',
+          cat: 'SUY NIỆM',
+          title: 'CẦU NGUYỆN VỚI PHÚC ÂM – THỨ SÁU  TUẦN 6 PHỤC SINH B',
+          link: '#',
+          isV2: true
+        })
+  .audioHome
+    +audioHome([
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/Chua-nhat-tuan-6-PS-B-469x352.jpg',
+        title: '[AUDIO THÁNH LỄ] CHÚA NHẬT VI PS-B CHỦ ĐỀ HÃY YÊU THƯƠNG NHAU THÁNH LỄ THIẾU NHI',
+        date: '17:24 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/Chua-nhat-tuan-6PS-469x352.jpg',
+        title: '[AUDIO THÁNH LỄ] CHÚA NHẬT VI PS-B CHỦ ĐỀ HÃY YÊU THƯƠNG NHAU THÁNH LỄ SÁNG',
+        date: '17:04 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2020/05/Thanh-Daminh-Savio.jpg',
+        title: '[AUDIO THÁNH LỄ] MỪNG LỄ THÁNH ĐAMINH SAVIÔ BỔN MẠNG BAN LỄ SINH',
+        date: '17:24 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/chua-nhat-tuan-5-PS-B-469x352.jpg',
+        title: '[AUDIO THÁNH LỄ] CHÚA NHẬT TUẦN V PS-B : THẦY LÀ CÂY NHO',
+        date: '17:24 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/THANH-GIUSE-THO-01-05-570x321.jpg',
+        title: '[AUDIO THÁNH LỄ] MỪNG KÍNH THÁNH GIUSE THỢ BỔN MẠNG GX.PHÚ HÒA VÀ HĐMV NĂM B',
+        date: '17:24 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/Chua-nhat-tuan-6-PS-B-469x352.jpg',
+        title: '[AUDIO THÁNH LỄ] CHÚA NHẬT VI PS-B CHỦ ĐỀ HÃY YÊU THƯƠNG NHAU THÁNH LỄ THIẾU NHI',
+        date: '17:24 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/Chua-nhat-tuan-6PS-469x352.jpg',
+        title: '[AUDIO THÁNH LỄ] CHÚA NHẬT VI PS-B CHỦ ĐỀ HÃY YÊU THƯƠNG NHAU THÁNH LỄ SÁNG',
+        date: '17:04 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2020/05/Thanh-Daminh-Savio.jpg',
+        title: '[AUDIO THÁNH LỄ] MỪNG LỄ THÁNH ĐAMINH SAVIÔ BỔN MẠNG BAN LỄ SINH',
+        date: '17:24 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/chua-nhat-tuan-5-PS-B-469x352.jpg',
+        title: '[AUDIO THÁNH LỄ] CHÚA NHẬT TUẦN V PS-B : THẦY LÀ CÂY NHO',
+        date: '17:24 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/THANH-GIUSE-THO-01-05-570x321.jpg',
+        title: '[AUDIO THÁNH LỄ] MỪNG KÍNH THÁNH GIUSE THỢ BỔN MẠNG GX.PHÚ HÒA VÀ HĐMV NĂM B',
+        date: '17:24 09/05/2021',
+        link: '#',
+      },
+    ])

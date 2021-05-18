@@ -1,0 +1,42 @@
+.audioHome {
+	padding: 20px;
+	padding-bottom: 1px;
+	margin-bottom: 25px;
+	background: $color-dark;
+
+  .grid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+
+  .col{
+    width: 20%;
+    padding: 0 10px;
+    flex-basis: auto;
+    flex-grow: unset;
+
+    @include mq(991) {
+      width: 33.333333%;
+    }
+
+    @include mq(768) {
+      width: 50%;
+    }
+  }
+
+  .news {
+    .tend {
+      a {
+        display: block;
+        max-height: 40px;
+        font-size: 12px;
+        line-height: 20px;
+        color: $color-white-1;
+        overflow: hidden;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+mixin news(item)
+  .news
+    .img
+      +link(item.title, item.link)(style={'background-image': 'url('+item.img+')'})
+    .caption
+      if item.date
+        .date!=item.date
+      if item.cat
+        .cat!=item.cat
+      if item.title
+        .tend
+          +link(item.title, item.link)!=item.title
+      if item.desc
+        .desc!=item.desc

@@ -41,6 +41,12 @@ img {
   overflow: hidden;
 }
 
+#gx-content {
+  @include mq(991) {
+    padding: 0 10px;
+  }
+}
+
 .wrapper {
   max-width: $max-wrapper;
   padding: 10px;

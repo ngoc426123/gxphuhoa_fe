@@ -1,0 +1,62 @@
+.newsInner {
+	position: relative;
+	margin-bottom: 10px;
+
+  a {
+    display: block;
+    padding-top: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background:rgba(0,0,0,0.1);
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+
+  .caption {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .tend {
+    padding: 8px 10px;
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 600;
+    background: rgba(0,0,0,0.4);
+    color: $color-white-1;
+    text-transform: uppercase;
+  }
+
+  .cat {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background-color: $color-main;
+    color: $color-white-1;
+    font-size: 10px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  &.v2 {
+    a {
+      padding-top: 48.7%;
+    }
+  }
+}
