@@ -1,5 +1,6 @@
 .news {
   margin-bottom: 10px;
+  position: relative;
 
   .img {
     margin-bottom: 10px;
@@ -7,7 +8,7 @@
 
     a {
       display: block;
-      padding-top: 55.666666%;
+      padding-top: 66.666666%;
       position: relative;
       overflow: hidden;
       background-position: top center;
@@ -18,22 +19,12 @@
 
   .cat {
     display: inline-block;
-    margin-bottom: 5px;
-    padding: 5px 10px;
-    font-size: 14px;
-    line-height: 22px;
-    background: $color-main;
-    color: $color-white-1;
-    text-transform: uppercase;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    z-index: 1;
+    font-size: 11px;
+    line-height: 18px;
+    color: $color-gray-2;
   }
 
   .tend {
-    margin-bottom: 5px;
-
     a {
       display: block;
       font-size: 14px;
@@ -44,9 +35,9 @@
     }
   }
 
-  .date{
+  .date {
+    display: inline-block;
     padding-left: 15px;
-    margin-bottom: 5px;
     font-size: 11px;
     line-height: 18px;
     color: $color-gray-2;
@@ -66,5 +57,41 @@
     font-size: 13px;
     line-height: 21px;
     color: $color-gray-2;
+  }
+
+  &.v2 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+
+    .img {
+      width: 80px;
+      margin-right: 10px;
+      flex-shrink: 0;
+
+      @include mq(768) {
+        width: 160px;
+      }
+
+      @include mq(480) {
+        width: 100px;
+      }
+    }
+
+    .tend {
+      a {
+        display: block;
+        max-height: 36px;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: normal;
+        text-transform: uppercase;
+        overflow: hidden;
+      }
+    }
+
+    .date {
+      margin-bottom: 0;
+    }
   }
 } 

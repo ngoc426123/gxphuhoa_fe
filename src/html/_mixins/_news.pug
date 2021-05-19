@@ -1,5 +1,5 @@
 mixin news(item)
-  .news
+  .news(class=[item.isImgLeft && 'v2'])
     .img
       +link(item.title, item.link)(style={'background-image': 'url('+item.img+')'})
     .caption
@@ -10,5 +10,5 @@ mixin news(item)
       if item.title
         .tend
           +link(item.title, item.link)!=item.title
-      if item.desc
-        .desc!=item.desc
+      if item.des
+        .des!=item.des

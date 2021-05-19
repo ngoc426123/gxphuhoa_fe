@@ -1,0 +1,10 @@
+mixin boxNewsHome(param)
+  .boxNewsHome
+    .titleHome
+      span(class=[param.icon])!=param.title
+    .contentHome
+      .grid
+        .col1
+          +news(param.newsFocus) 
+        .col2
+          +newsList(param.newsList)

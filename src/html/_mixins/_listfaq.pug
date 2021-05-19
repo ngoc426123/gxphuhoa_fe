@@ -1,0 +1,8 @@
+mixin listFaq(items) 
+  each item in items
+    .col
+      .faq
+        .caption
+          .date!=item.date
+          .tend
+            +link(item.title, item.link)!=item.title
