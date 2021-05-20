@@ -13,12 +13,18 @@ p {
   padding-bottom: 5px;
 }
 
-a{
+a {
+  color: $color-black-2;
+
   &:hover,
   &:focus,
   &:active {
     text-decoration: none;
     transition: all .3s linear;
+  }
+
+  &:hover {
+    color: $color-main;
   }
 }
 
@@ -65,5 +71,21 @@ img {
   & > *[class^="col-"] {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+
+.mb {
+  &-bottom {
+    &-10 {
+      margin-bottom: 10px;
+    }
+
+    &-20 {
+      margin-bottom: 20px;
+    }
+
+    &-30 {
+      margin-bottom: 30px;
+    }
   }
 }

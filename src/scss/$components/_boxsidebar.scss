@@ -1,0 +1,43 @@
+.boxSidebar {
+  margin-bottom: 20px;
+	background-color: $color-white-1;
+	border:solid 1px $color-gray-1;
+	border-top-color: $color-main;
+
+  .title {
+    @extend %font-title;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 8px 20px;
+    padding-left: 40px;
+    text-transform: uppercase;
+    border-bottom: solid 1px $color-gray-1;
+    position: relative;
+
+    &::before{
+      @extend %font-icon;
+      position: absolute;
+      @extend %pll;
+      left: 15px;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+    }
+
+    li {
+      margin-right: 10px;
+    }
+
+    a {
+      &.active {
+        color: $color-main;
+      }
+    }
+  }
+
+  .content{
+    padding: 10px;
+  }
+}

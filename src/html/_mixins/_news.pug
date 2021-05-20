@@ -1,7 +1,8 @@
 mixin news(item)
   .news(class=[item.isImgLeft && 'v2'])
-    .img
-      +link(item.title, item.link)(style={'background-image': 'url('+item.img+')'})
+    if item.img
+      .img
+        +link(item.title, item.link)(style={'background-image': 'url('+item.img+')'})
     .caption
       if item.date
         .date!=item.date

@@ -30,7 +30,6 @@
       font-size: 14px;
       line-height: 22px;
       color: $color-black-1;
-      text-transform: uppercase;
       font-weight: 600;
     }
   }
@@ -53,7 +52,7 @@
     }
   }
 
-  .des{
+  .des {
     font-size: 13px;
     line-height: 21px;
     color: $color-gray-2;
@@ -82,16 +81,28 @@
       a {
         display: block;
         max-height: 36px;
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 13px;
+        line-height: 21px;
         font-weight: normal;
-        text-transform: uppercase;
         overflow: hidden;
       }
     }
 
     .date {
       margin-bottom: 0;
+    }
+  }
+
+  .listNote & {
+    &:not(:last-child) {
+      padding-bottom: 10px;
+      border-bottom: solid 1px $color-gray-1;
+    }
+
+    .tend {
+      a {
+        font-weight: 600;
+      }
     }
   }
 } 

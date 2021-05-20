@@ -1,0 +1,81 @@
+.listGKHD {
+  li {
+    margin-bottom: 5px;
+
+    &:hover {
+      img {
+        transform: scale(1.05)
+      }
+    }
+  }
+
+  a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-color: $color-main;
+
+    &::before {
+      border-top: solid 1px rgba(255,255,255,0.40);
+      border-bottom: solid 1px rgba(255,255,255,0.40);
+      content: "";
+      position: absolute;
+      top: 5px;
+      bottom: 5px;
+      left: 50%;
+      right: 50%;
+      transition: all .5s ease;
+      z-index: 1
+    }
+
+    &::after {
+      border-left: solid 1px rgba(255,255,255,0.40);
+      border-right: solid 1px rgba(255,255,255,0.40);
+      content: "";
+      position: absolute;
+      top: 50%;
+      bottom: 50%;
+      left: 5px;
+      right: 5px;
+      transition: all .5s ease;
+      z-index: 1
+    }
+
+    &:hover {
+      &::before {
+        left: 5px;
+        right: 5px
+      }
+
+      &::after {
+        top: 5px;
+        bottom: 5px
+      }
+    }
+  }
+
+  .caption {
+    @extend %font-title;  
+    font-size: 15px;
+    line-height: 23px;
+    color: $color-white-1;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    left: 80px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .ss1,
+  .ss2 {
+    display: block;
+  }
+
+  img {
+    transition: all .5s ease;
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,12 @@
+mixin listGKHD(items)
+  .listGKHD
+    ul
+      each item in items
+        - var caption = item.text1+' '+item.text2
+        li 
+          +link(item.link, caption)
+            +img(item.img, caption)
+            span.caption 
+              span.ss1!=item.text1
+              if item.text2
+                span.ss2!=item.text2
