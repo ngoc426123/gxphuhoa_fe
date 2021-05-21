@@ -3,5 +3,9 @@ mixin newsInner(item)
     .img
       +link(item.title, item.link)(style={'background-image': 'url('+item.img+')'})
     .caption
-      .cat!=item.cat
-      .tend!=item.title
+      if item.cat
+        .cat!=item.cat
+      .tend
+        if item.date
+          .date!=item.date
+        !=item.title

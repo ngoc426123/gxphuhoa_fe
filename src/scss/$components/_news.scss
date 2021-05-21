@@ -93,6 +93,12 @@
     }
   }
 
+  .audioHome & {
+    .date {
+      color: $color-white-1;
+    }
+  }
+
   .listNote & {
     &:not(:last-child) {
       padding-bottom: 10px;
@@ -102,6 +108,33 @@
     .tend {
       a {
         font-weight: 600;
+      }
+    }
+  }
+
+  .listNewsCategory & {
+    .img {
+      width: 33.3333%;
+    }
+
+    .tend {
+      a {
+        font-size: 16px;
+        line-height: 24px;
+        max-height: 48px;
+
+        @include mq(767) {
+          font-size: 14px;
+          line-height: 22px;
+          max-height: 44px;
+        }
+      }
+    }
+
+    .des {
+      @include mq(767) {
+        max-height: 42px;
+        overflow: hidden;
       }
     }
   }
