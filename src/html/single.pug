@@ -1,20 +1,30 @@
 extends _layout/_layout
 
 block main-content
-  .row
-    .col-12.col-lg-9
-      .the-wrap
-        .the-title
-          h1 THÁNH LỄ KÍNH THÁNH GIUSE : MỪNG BỔN MẠNG GIÁO KHU II
-        .the-date
-          span Khu Giáo II Thánh Giuse
-          | - Mar 19/03/2021
-      .the-content
-        p.text-center 
-          +img('https://gxphuhoa.org/wp-content/uploads/2014/12/Thanh-gia.jpg')
-        p Thinh lặng lắng nghe tiếng gọi của Thiên Chúa, Thánh Giuse đã âm thầm đi sâu vào đời sống nội tâm. Ngài hiểu tiếng gọi đó là một tình thương đặc biệt. Ngài trả lời như một giao ước, một gắn bó tín trung bền vững.Chúa gọi và chỉ dẫn ở từng chặng đường, Ngài nghe và vâng theo rồi mau mắn thi hành. Cho dù gặp khó khăn trắc trở, ngài luôn vững tin ở Đấng đã gọi mình.
-        p Hôm nay Giáo hội Công giáo mừng kính Thánh Giuse Bạn Đức Maria
-        p Hòa chung với Giáo hội hoàn vũ, cộng đoàn Giáo xứ hân hoan mừng kính Thánh Giuse lại và đặc biệt chúc mừng bổn mạng cộng đoàn Giáo khu 2.
-        p Kính mời quý cộng đoàn dân Chúa tham dự thánh lễ tạ ơn.
-    .col-12.col-lg-3
-      include ./_components/_sidebarsingle.pug
+  .the-single(data-single)
+    .row
+      .col-12.col-lg-9
+        .the-wrap(data-title-group)
+          .the-title
+            h1 THÁNH LỄ KÍNH THÁNH GIUSE : MỪNG BỔN MẠNG GIÁO KHU II
+          .the-date
+            span Khu Giáo II Thánh Giuse
+            | - Mar 19/03/2021
+        .the-content
+          p.text-center 
+            +img('https://gxphuhoa.org/wp-content/uploads/2014/12/Thanh-gia.jpg')
+          p Thinh lặng lắng nghe tiếng gọi của Thiên Chúa, Thánh Giuse đã âm thầm đi sâu vào đời sống nội tâm. Ngài hiểu tiếng gọi đó là một tình thương đặc biệt. Ngài trả lời như một giao ước, một gắn bó tín trung bền vững.Chúa gọi và chỉ dẫn ở từng chặng đường, Ngài nghe và vâng theo rồi mau mắn thi hành. Cho dù gặp khó khăn trắc trở, ngài luôn vững tin ở Đấng đã gọi mình.
+          p Hôm nay Giáo hội Công giáo mừng kính Thánh Giuse Bạn Đức Maria
+          p Hòa chung với Giáo hội hoàn vũ, cộng đoàn Giáo xứ hân hoan mừng kính Thánh Giuse lại và đặc biệt chúc mừng bổn mạng cộng đoàn Giáo khu 2.
+          p Kính mời quý cộng đoàn dân Chúa tham dự thánh lễ tạ ơn.
+      .col-12.col-lg-3
+        include ./_components/_sidebarsingle.pug
+    .single-fixed(data-single-fixed)
+      .wrapper
+        .left
+          .lg.d-none.d-lg-block
+            +img('https://gxphuhoa.org/wp-content/themes/maintheme/images/logo.png', 'Logo Giáo Xứ Phú Hoà')
+          .cat.d-none.d-lg-block Khu Giáo II Thánh Giuse
+          .title Giáo Khu Thánh Giuse: Hành Hương Đức Mẹ Bãi Dâu
+        +social()
+            

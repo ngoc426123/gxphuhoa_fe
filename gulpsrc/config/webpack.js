@@ -1,11 +1,12 @@
 const { ProvidePlugin } = require('webpack');
 const { resolve } = require('path');
-const { src } = require('../config/directories');
+const { src, src_script } = require('../config/directories');
 const { script_name } = require('../config/names');
 
 module.exports = {
+  entry: ['babel-polyfill', src_script],
   mode: 'none',
-  output: { filename : script_name },
+  output:{ filename : script_name },
   plugins: [
     new ProvidePlugin({
       $: 'jquery',

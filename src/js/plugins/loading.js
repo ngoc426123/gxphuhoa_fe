@@ -9,23 +9,23 @@ export default class Loading {
   }
 
   initEvent () {
-    $(window).on('open-loading', () => this.openLoading());
-    $(window).on('close-loading', () => this.closeLoading());
+    $(window).on('open-loading', this.openLoading);
+    $(window).on('close-loading', this.closeLoading);
   }
 
-  openLoading () {
+  openLoading = () => {
     const {
-      openLoading
+      clsActive
     } = this.options;
 
-    this.$element.addClass(openLoading);
+    this.$element.addClass(clsActive);
   }
 
-  closeLoading () {
+  closeLoading = () => {
     const {
-      openLoading
+      clsActive
     } = this.options;
 
-    this.$element.removeClass(openLoading);
+    this.$element.removeClass(clsActive);
   }
 }

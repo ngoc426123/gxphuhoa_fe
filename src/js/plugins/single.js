@@ -2,12 +2,15 @@ import $http from 'axios';
 
 @Plugin({
   options: {
-    pluginName: 'Category',
-    dataListNews: '[data-list-news]',
+    pluginName: 'Single',
+    dataListAudioOther: '[data-list-audio-other]',
     dataLoadMore: '[data-load-more]',
+    dataSingleFixed: '[data-single-fixed]',
+    dataTitleGroup: '[data-title-group]',
+    clsActive: 'active',
   }
 })
-export default class Category {
+export default class Single {
   init() {
     this.initDom();
     this.initEvent();
@@ -15,12 +18,16 @@ export default class Category {
 
   initDom () {
     const {
-      dataListNews,
-      dataLoadMore
+      dataListAudioOther,
+      dataLoadMore,
+      dataSingleFixed,
+      dataTitleGroup
     } = this.options;
 
-    this.$listNews = this.$element.find(dataListNews);
+    this.$listAudioOther = this.$element.find(dataListAudioOther);
     this.$loadMore = this.$element.find(dataLoadMore);
+    this.$singleFixed = this.$element.find(dataSingleFixed);
+    this.$titleGroup = this.$element.find(dataTitleGroup);
   }
 
   initEvent () {
@@ -32,6 +39,9 @@ export default class Category {
     this.$loadMore
       .off(`click.${pluginName}`)
       .on(`click.${pluginName}`, (event) => this.loadMore(event));
+
+    // FINXED SINGLE
+    $(window).on('scroll', () => this.onsingleFixed());
   }
 
   async loadMore (event) {
@@ -59,19 +69,31 @@ export default class Category {
 
   renderItem (data) {
     data.forEach(item => {
-      const tmp = `<div class="news v2">
-                    <div class="img">
-                      <a href="${item.link}" title="${item.title}" style="background-image:url(${item.img});"></a>
+      const tmp = `<div class="col">
+                  <div class="news">
+                    <div class="img"><a href="${item.link}" title="${item.title}" style="background-image:url(${item.img});"></a>
                     </div>
                     <div class="caption">
                       <div class="date">${item.date}</div>
-                      <div class="cat">${item.cat}</div>
                       <div class="tend"><a href="${item.link}" title="${item.title}">${item.title}</a>
                       </div>
-                      <div class="des">${item.des}</div>
                     </div>
-                  </div>`;
-      this.$listNews.append(tmp);
+                  </div>
+                </div>`;
+      this.$listAudioOther.append(tmp);
     });
+  }
+
+  onsingleFixed () {
+    const {
+      clsActive
+    } = this.options;
+    const singleoffsetTop = this.$element.offset().top;
+    const singleTitleHeight = this.$titleGroup.outerHeight();
+    const offset4Show = singleoffsetTop + singleTitleHeight;
+    const offsetWin = $(window).scrollTop();
+
+    ( offsetWin > offset4Show ) && this.$singleFixed.addClass(clsActive);
+    ( offsetWin < offset4Show ) && this.$singleFixed.removeClass(clsActive);
   }
 }

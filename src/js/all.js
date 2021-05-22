@@ -6,3 +6,7 @@ import './_init/core'
 import './plugins/loading'
 import './plugins/menumobile'
 import './plugins/category'
+import './plugins/single'
+
+// API
+import './api/index'
