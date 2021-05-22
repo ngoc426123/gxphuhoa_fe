@@ -5,7 +5,7 @@ const { script_name } = require('../config/names');
 
 module.exports = {
   mode: 'none',
-  output:{ filename : script_name },
+  output: { filename : script_name },
   plugins: [
     new ProvidePlugin({
       $: 'jquery',

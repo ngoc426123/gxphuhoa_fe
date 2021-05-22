@@ -1,0 +1,83 @@
+extends _layout/_layout
+
+block main-content
+  .the-audio-wrap
+    .row.flex-lg-row-reverse
+      .col-12.col-lg-4
+        .the-wrap
+          .the-title
+            h1 [AUDIO THÁNH LỄ] CHÚA NHẬT VI PS-B CHỦ ĐỀ HÃY YÊU THƯƠNG NHAU THÁNH LỄ THIẾU NHI
+          .the-date
+            span Bài giảng hàng tuần
+            | - May 09/05/2021
+        include ./_components/_sidebarsingleaudio.pug
+      .col-12.col-lg-8
+        .the-content
+          p.text-center Kinh mời quý cộng đoàn nghe thánh lễ Chúa Nhật Chúa VI PS Chủ Đề Yêu Thương Nhau Năm B do Cha Giuse Qui Dòng Thừa Sai Việt Nam chia sẻ.
+          iframe(src="https://www.youtube.com/embed/96UW73st0io?rel=0")
+  .the-audio-other
+    +audioHome([
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/Chua-nhat-tuan-6-PS-B-469x352.jpg',
+        title: '[AUDIO THÁNH LỄ] CHÚA NHẬT VI PS-B CHỦ ĐỀ HÃY YÊU THƯƠNG NHAU THÁNH LỄ THIẾU NHI',
+        date: '17:24 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/Chua-nhat-tuan-6PS-469x352.jpg',
+        title: '[AUDIO THÁNH LỄ] CHÚA NHẬT VI PS-B CHỦ ĐỀ HÃY YÊU THƯƠNG NHAU THÁNH LỄ SÁNG',
+        date: '17:04 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2020/05/Thanh-Daminh-Savio.jpg',
+        title: '[AUDIO THÁNH LỄ] MỪNG LỄ THÁNH ĐAMINH SAVIÔ BỔN MẠNG BAN LỄ SINH',
+        date: '17:24 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/chua-nhat-tuan-5-PS-B-469x352.jpg',
+        title: '[AUDIO THÁNH LỄ] CHÚA NHẬT TUẦN V PS-B : THẦY LÀ CÂY NHO',
+        date: '17:24 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/THANH-GIUSE-THO-01-05-570x321.jpg',
+        title: '[AUDIO THÁNH LỄ] MỪNG KÍNH THÁNH GIUSE THỢ BỔN MẠNG GX.PHÚ HÒA VÀ HĐMV NĂM B',
+        date: '17:24 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/Chua-nhat-tuan-6-PS-B-469x352.jpg',
+        title: '[AUDIO THÁNH LỄ] CHÚA NHẬT VI PS-B CHỦ ĐỀ HÃY YÊU THƯƠNG NHAU THÁNH LỄ THIẾU NHI',
+        date: '17:24 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/Chua-nhat-tuan-6PS-469x352.jpg',
+        title: '[AUDIO THÁNH LỄ] CHÚA NHẬT VI PS-B CHỦ ĐỀ HÃY YÊU THƯƠNG NHAU THÁNH LỄ SÁNG',
+        date: '17:04 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2020/05/Thanh-Daminh-Savio.jpg',
+        title: '[AUDIO THÁNH LỄ] MỪNG LỄ THÁNH ĐAMINH SAVIÔ BỔN MẠNG BAN LỄ SINH',
+        date: '17:24 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/chua-nhat-tuan-5-PS-B-469x352.jpg',
+        title: '[AUDIO THÁNH LỄ] CHÚA NHẬT TUẦN V PS-B : THẦY LÀ CÂY NHO',
+        date: '17:24 09/05/2021',
+        link: '#',
+      },
+      {
+        img: 'http://localhost/gxphuhoa/wp-content/uploads/2021/05/THANH-GIUSE-THO-01-05-570x321.jpg',
+        title: '[AUDIO THÁNH LỄ] MỪNG KÍNH THÁNH GIUSE THỢ BỔN MẠNG GX.PHÚ HÒA VÀ HĐMV NĂM B',
+        date: '17:24 09/05/2021',
+        link: '#',
+      },
+    ])
+  .moreNewsCategory
+    +link('#', 'Load more')(data-page="30", data-cate="48")
+      span Xem thêm...

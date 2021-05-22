@@ -112,6 +112,24 @@
     }
   }
 
+  .newsCategory & {
+    .img {
+      margin-bottom: 5px;
+
+      a {
+        padding-top: 62.6667%;
+      }
+    }
+
+    .tend {
+      a {
+        font-size: 13px;
+        line-height: 21px;
+        font-weight: normal;
+      }
+    }
+  }
+
   .listNewsCategory & {
     .img {
       width: 33.3333%;
@@ -135,6 +153,16 @@
       @include mq(767) {
         max-height: 42px;
         overflow: hidden;
+      }
+    }
+  }
+
+  .the-audio-other & {
+    .tend {
+      a {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: normal;
       }
     }
   }

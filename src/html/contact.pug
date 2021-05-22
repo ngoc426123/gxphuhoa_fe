@@ -1,0 +1,47 @@
+extends _layout/_layout
+
+block main-content
+  .wrapContact(style={'background-image': 'url(https://gxphuhoa.org/wp-content/themes/maintheme/images/contact_bg.jpg)'})
+    .map-contact
+      iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.450407767398!2d106.6431533148018!3d10.776774062134153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ebbeb104883%3A0xbc67f7512a83dc9b!2zR2nDoW8gWOG7qSBQaMO6IEjDsmE!5e0!3m2!1svi!2s!4v1506331367780" frameborder="0" width="100%" height="450")
+    .row
+      .col-12.col-lg-4
+        .info-contact
+          .qrCode
+            +img('https://chart.apis.google.com/chart?cht=qr&chs=300x300&chl=Gi%C3%A1o%20X%E1%BB%A9%20Ph%C3%BA%20h%C3%B2a%0A%C4%90%E1%BB%8Ba%20ch%E1%BB%89%20%3A%2019%2F2%20Ho%C3%A0ng%20Xu%C3%A2n%20Nh%E1%BB%8B%2C%20P.%20Ph%C3%BA%20Trung%2C%20Q.%20T%C3%A2n%20Ph%C3%BA%2C%20Tp.%20HCM%0AEmail%20%3A%20mvttgxphuhoa%40gmail.com%0ASDT%20%3A%2001673.996.947%0AWebsite%20%3A%20http%3A%2F%2Fgxphuhoa.org&choe=UTF-8&chld=H', 'QRcode giáo xứ phú hoà')
+          .info
+            .name Ban truyền thông giáo xứ Phú Hòa
+            .be.fa-home 19/2 Hoàng Xuân Nhị, P. Phú Trung, Q. Tân Phú, Tp. HCM
+            .be.fa-envelope
+              a(href='mailto:mvttgxphuhoa@gmail.com') mvttgxphuhoa@gmail.com
+            .be.fa-phone
+              a(href='tel:0373996947') 0373.996.947
+            .be.fa-globe
+              a(href='http://gxphuhoa.org') http://gxphuhoa.org
+      .col-12.col-lg-8
+        .form-contact
+          small.text-success
+          .txt-contact
+            p Quý vị đóng góp ý kiến, hoặc cần giải đáp về giáo lý.
+            p Xin vui lòng hoàn tắt biểu mẫu dưới đây để chúng tôi có thể trả lời  thư của quý vị.
+            p Xin cảm ơn !
+          .form
+            form(action='http://localhost/gxphuhoa/lien-he/' method='post')
+              .form-group
+                input(name='contact-name' type='text' placeholder='Họ tên...')
+              .form-group
+                input(name='contact-address' type='text' placeholder='Địa chỉ...')
+              .form-group
+                input(name='contact-email' type='text' placeholder='Email...')
+              .form-group
+                input(name='contact-gx' type='text' placeholder='Giáo xứ...')
+              .form-group
+                textarea(name='contact-content' placeholder='Nội dung...')
+              .form-group
+                .df
+                  input(name='ser' type='text' placeholder='Mã bảo vệ...')
+                  img(src='https://gxphuhoa.org/wp-content/themes/maintheme/captcha.php' alt='')
+                small.text-danger
+              .form-group
+                button(type='submit' name='ok')
+                  span Gởi
