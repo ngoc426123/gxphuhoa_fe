@@ -42,6 +42,8 @@ export default class Single {
 
     // FINXED SINGLE
     $(window).on('scroll', () => this.onsingleFixed());
+
+    $(window).on('load', () => this.initContent());
   }
 
   async loadMore (event) {
@@ -95,5 +97,15 @@ export default class Single {
 
     ( offsetWin > offset4Show ) && this.$singleFixed.addClass(clsActive);
     ( offsetWin < offset4Show ) && this.$singleFixed.removeClass(clsActive);
+  }
+
+  initContent () {
+    this.$element.find('.the-content img').each(function(){
+      $(this).attr({
+        'width': '',
+        'height': '',
+        'style': '',
+      });
+    });
   }
 }

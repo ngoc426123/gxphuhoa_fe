@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&subset=latin-ext,vietnamese');
+
+.introAbout {
+  .fancybox-slide--html {
+    padding: 0;
+  }
+
+  .fancybox-content {
+    width: 100%;
+    height: 100%;
+  }
+
+  button[data-fancybox-close] {
+    width:50px;
+    height:50px;
+    background-color: $color-black-1;
+    color: $color-white-1;
+    top: 0;
+    right: 0;
+
+    &::before{
+      font-size: 30px;
+      line-height: 30px;
+      content: "\f00d";
+      @extend %font-icon;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  
+}
+.introGiaoxu {
+	background-color: $color-black-1;
+	color: $color-white-1;
+	padding: 0;
+	padding-bottom: 65px;
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
+
+  .wrapper {
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: transparent;
+  }
+
+  .imgIntro {
+    margin-bottom: 65px;
+  }
+
+  .titleIntro {
+    margin-bottom: 45px;
+    font-size: 50px;
+    line-height: 65px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+  }
+
+  .contentIntro {
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 26px;
+    color:#dadada;
+    text-align: justify;
+
+    p.cap:first-letter {
+      float: left;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-left: 3px;
+      font-size: 70px;
+      line-height: 50px;
+      font-weight: bold;
+      font-family: Times New Roman;
+    }
+  }
+
+  .img-left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+
+    img {
+      max-width: 200px;
+      opacity: 0.8;
+    }
+  }
+
+  .thovan {
+    text-align: center;
+    font-style: italic;
+
+    p {
+      padding: 0;
+    }
+  }
+}

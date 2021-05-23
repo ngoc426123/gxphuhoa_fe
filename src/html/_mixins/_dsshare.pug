@@ -1,9 +1,9 @@
 mixin dsShare()
-  .ds_share
+  .ds_share(data-share)
     ul
       li
         .item-share
-          +link('Share Facebook', '#')
+          +link('Share Facebook', '#')(data-share-facebook)
           .icon(style={'background-color':'#3b5998'})
             i.fab.fa-facebook
           .tend

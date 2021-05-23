@@ -5,8 +5,10 @@ import './_init/core'
 // PLUGIN
 import './plugins/loading'
 import './plugins/menumobile'
+import './plugins/headtop'
 import './plugins/category'
 import './plugins/single'
+import './plugins/share'
 
 // API
 import './api/index'

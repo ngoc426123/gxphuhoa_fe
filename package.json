@@ -4,6 +4,7 @@
   "description": "Template html",
   "main": "gulpfile.js",
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^4.6.0",
     "browser-sync": "^2.26.14",

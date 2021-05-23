@@ -1,8 +1,8 @@
 mixin social()
-  .social&attributes(attributes)
+  .social(data-share)&attributes(attributes)
     ul
       li
-        +link('Share Facebook', '#')(style={'background-color':'#3b5998'})
+        +link('Share Facebook', '#')(data-share-facebook style={'background-color':'#3b5998'})
           i.fab.fa-facebook 
       li
         +link('Share Google', '#')(style={'background-color':'#dc4e41'})
@@ -11,5 +11,5 @@ mixin social()
         +link('Share Twitter', '#')(style={'background-color':'#1da1f2'})
           i.fab.fa-twitter
       li
-        +link('Share facebook', '#')(style={'background-color':'#cb2027'})
+        +link('Share pinterest', '#')(style={'background-color':'#cb2027'})
           i.fab.fa-pinterest
