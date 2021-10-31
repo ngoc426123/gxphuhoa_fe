@@ -1,8 +1,8 @@
 #headTop{
-	background-color: $color-main;
+	background-color: var(--main);
 
   @include mq(991) {
-    background-color: $color-dark;
+    background-color: var(--dark);
     min-height: 25px;
   }
 

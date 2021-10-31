@@ -50,7 +50,7 @@
     line-height: 26px;
     font-weight: bold;
     text-transform: uppercase;
-    color: $color-main;
+    color: var(--main);
     @extend %font-title;
   }
 
@@ -64,7 +64,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      color: $color-main;
+      color: var(--main);
     }
   }
 
@@ -106,11 +106,11 @@
     text-transform: uppercase;
     @extend %font-title;
     border:none;
-    background: $color-main;
+    background: var(--main);
     transition: all 0.3s linear;
 
     &:hover{
-      background: $color-light;
+      background: var(--light);
     }
   }
 

@@ -1,3 +1,3 @@
 window.api = {
-  posts: 'http://localhost/gxphuhoa/wp-json/apigxphuhoa/posts'
+  posts: 'https://gxphuhoa.org/wp-json/apigxphuhoa/posts'
 }

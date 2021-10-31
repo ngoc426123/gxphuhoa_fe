@@ -15,7 +15,7 @@
     @extend %font-title;
 
     &:hover {
-      background-color: $color-light;
+      background-color: var(--light);
     }
   }
 }

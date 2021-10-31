@@ -2,7 +2,7 @@
 	padding: 20px;
 	padding-bottom: 1px;
 	margin-bottom: 20px;
-	background: $color-dark;
+	background: var(--dark);
 
   @include mq(768) {
     padding: 10px;

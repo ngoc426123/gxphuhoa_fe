@@ -1,3 +1,9 @@
+:root {
+  --main: #467ead;
+  --light: #5aa0da;
+  --dark: #325979;
+}
+
 body {
   @extend %font-main;
   font-weight: normal;

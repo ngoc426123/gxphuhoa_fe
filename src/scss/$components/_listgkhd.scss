@@ -13,7 +13,7 @@
     display: block;
     position: relative;
     overflow: hidden;
-    background-color: $color-main;
+    background-color: var(--main);
 
     &::before {
       border-top: solid 1px rgba(255,255,255,0.40);

@@ -9,7 +9,7 @@
 #footerMain {
 	padding: 25px 0 40px;
 	color: $color-white-1;
-	background: $color-dark;
+	background: var(--dark);
 
   @include mq(991) {
     padding: 20px 10px 10px;

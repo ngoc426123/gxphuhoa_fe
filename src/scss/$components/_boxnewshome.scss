@@ -8,7 +8,7 @@
     text-transform: uppercase;
     font-weight: bold;
     @extend %font-title;
-    border-bottom: solid 1px $color-main;
+    border-bottom: solid 1px var(--main);
 
     span {
       display: inline-block;
@@ -24,7 +24,7 @@
         line-height: 40px;
         font-weight: normal;
         color: $color-white-1;
-        background-color: $color-main;
+        background-color: var(--main);
         position: absolute;
         top: 0;
         left: 0;

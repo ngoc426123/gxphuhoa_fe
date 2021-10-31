@@ -127,7 +127,7 @@
       &:hover {
         > a {
           color: $color-white-1;
-          background-color: $color-main;
+          background-color: var(--main);
         }
 
         > .sub {
@@ -168,7 +168,7 @@
 
         &:hover {
           a {
-            color: $color-main;
+            color: var(--main);
             background-color: $color-gray-3;
           }
         }

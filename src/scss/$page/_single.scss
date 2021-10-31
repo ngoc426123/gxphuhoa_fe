@@ -2,7 +2,7 @@
 	margin-top: 10px;
   margin-bottom: 15px;
   padding-left: 15px;
-  border-left: solid 5px $color-main;
+  border-left: solid 5px var(--main);
 }
 
 .the-title {
@@ -20,7 +20,7 @@
 	color:$color-gray-2;
 
   span {
-    color: $color-main;
+    color: var(--main);
   }
 }
 
