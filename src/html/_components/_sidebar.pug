@@ -42,14 +42,14 @@
           isImgLeft: true,
         },
       ])
-.boxSidebar.d-none.d-lg-block
+.boxSidebar
   .title.fa-users
     ul(class="nav", role="tablist")
       li
-        +link('Giáo khu', '#giaokhu')(role="tab", data-toggle="tab", aria-expanded="true", class="active")
+        +link('Giáo khu', '#giaokhu')(role="tab" data-bs-toggle="tab" data-bs-target="#giaokhu" class="active")
           span Giáo khu
       li
-        +link('Hội đoàn', '#hoidoan')(role="tab", data-toggle="tab", aria-expanded="true")
+        +link('Hội đoàn', '#hoidoan')(role="tab" data-bs-toggle="tab" data-bs-target="#hoidoan")
           span Hội đoàn
   .content
     .tab-content
@@ -139,3 +139,19 @@
             | Chầu thánh thể vào đầu 
             strong thứ sáu đầu tháng
           td 19h00
+.boxSidebar
+  .title.fa-file-alt tHỦ TỤC HÔN PHỐI
+  .content
+    strong.d-block.fs-6.text-center HỒ SƠ HÔN PHỐI
+    .text-center.mb-3 Chuẩn bị trước khi trình cha sở
+    ul.mb-3.listStyle.listStyle--decimal
+      li Giấy xác nhận của Trưởng Giáo họ.
+      li Giấy giới thiệu của cha xứ bên kia.
+      li Chứng chỉ Rửa tội không quá 6 tháng.
+      li Chứng chỉ Thêm sức.
+      li Chứng chỉ Giáo lý Hôn nhân.
+      li Giấy chứng nhận Kết hôn (bản sao).
+      li Đại diện cha mẹ hai bên.
+    div
+      | Cha sở giải quyết tất cả các giấy tờ liên quan đến thủ tục hôn phối, vào lúc 
+      strong 19g00 thứ Ba hàng tuần.

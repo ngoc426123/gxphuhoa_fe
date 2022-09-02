@@ -1,4 +1,12 @@
 .listGKHD {
+  ul {
+    @include mq(991) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -5px;
+    }
+  }
+
   li {
     margin-bottom: 5px;
 
@@ -6,6 +14,19 @@
       img {
         transform: scale(1.05)
       }
+    }
+
+    @include mq(991) {
+      width: 33.333333%;
+      padding: 0 5px;
+    }
+
+    @include mq(768) {
+      width: 50%;
+    }
+
+    @include mq(520) {
+      width: 100%;
     }
   }
 

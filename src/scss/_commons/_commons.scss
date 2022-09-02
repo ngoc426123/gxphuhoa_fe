@@ -94,3 +94,24 @@ img {
     }
   }
 }
+
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    display: block;
+  }
+}
+
+.listStyle {
+  padding-left: 20px;
+
+  &--decimal {
+    list-style: decimal;
+
+    li {
+      list-style: inherit;
+    }
+  }
+}
