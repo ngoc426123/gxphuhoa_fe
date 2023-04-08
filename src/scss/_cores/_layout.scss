@@ -4,6 +4,10 @@
   --dark: #325979;
 }
 
+html {
+  border: none !important;
+}
+
 body {
   @extend %font-main;
   font-weight: normal;
