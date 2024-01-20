@@ -1,0 +1,55 @@
+.slideVideoHome {
+	padding: 20px;
+	margin-bottom: 20px;
+	background: var(--dark);
+
+  &-head {
+    margin-bottom: 15px;
+    color: $color-white-1;
+
+    span {
+      display: block;
+      font-size: 12px;
+      line-height: 20px;
+      color: $color-gray-1;
+    }
+  }
+
+  &-head-text {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &-item-video {
+    cursor: pointer;
+    color: $color-white-1;
+  }
+
+  &-thumbnail {
+    margin-bottom: 10px;
+    position: relative;
+
+    img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+  }
+
+  &-duration {
+    padding: 3px 4px;
+    font-size: 12px;
+    line-height: 12px;
+    border-radius: 4px;
+    background-color: rgba($color-black-1, .8);
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    z-index: 1;
+  }
+
+  &-title {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
