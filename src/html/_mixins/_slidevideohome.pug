@@ -1,10 +1,14 @@
-mixin slidevideoHome(data)
+mixin slideVideoHome(data)
   .swiper
     .swiper-wrapper
       each item in data
         .swiper-slide
-          .slideVideoHome-item-video(class=[item.live && '--live'] data-id!=item.id)
+          .slideVideoHome-item-video(class=[item.live && '--live'])
             .slideVideoHome-thumbnail
               +img(item.image, item.title)
               .slideVideoHome-duration!=item.duration
             .slideVideoHome-title!=item.title
+            +link(href=`https://www.youtube.com/embed/${item.id}`)(
+              data-fancybox
+              data-type="iframe"
+            ).slideVideoHome-link

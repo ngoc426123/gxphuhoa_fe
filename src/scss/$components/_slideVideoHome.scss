@@ -21,8 +21,8 @@
   }
 
   &-item-video {
-    cursor: pointer;
     color: $color-white-1;
+    position: relative;
   }
 
   &-thumbnail {
@@ -51,5 +51,14 @@
   &-title {
     font-size: 13px;
     line-height: 18px;
+  }
+  
+  &-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
   }
 }
