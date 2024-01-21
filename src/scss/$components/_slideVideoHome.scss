@@ -1,4 +1,6 @@
 .slideVideoHome {
+  $this: &;
+
 	padding: 20px;
 	margin-bottom: 20px;
 	background: var(--dark);
@@ -23,6 +25,12 @@
   &-item-video {
     color: $color-white-1;
     position: relative;
+
+    &.\--live {
+      #{$this}-duration {
+        background-color: rgba($color-red-youtube, .9);
+      }
+    }
   }
 
   &-thumbnail {
@@ -46,6 +54,7 @@
     bottom: 4px;
     right: 4px;
     z-index: 1;
+    text-transform: uppercase;
   }
 
   &-title {
