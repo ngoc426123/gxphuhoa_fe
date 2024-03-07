@@ -26,7 +26,7 @@ export default class MenuMobile {
       clsOverlay
     } = this.options;
 
-    this.$iconMenu = this.$element.find(clsIconMenu);
+    this.$iconMenu = $('html').find(clsIconMenu);
     this.$divMM = this.$element.find(clsDivmm);
     this.$closeMenu = this.$element.find(clsClose);
     this.$overlay = this.$element.find(clsOverlay);
